@@ -1,6 +1,6 @@
 # Setup Regal
 
-GitHub action to configure [Regal](https://github.com/StyraInc/regal), the linter for Rego.
+GitHub action to configure [Regal](https://github.com/open-policy-agent/regal), the Rego linter.
 
 ## Basic Usage
 
@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Setup Regal
-      uses: StyraInc/setup-regal@v1
+      uses: open-policy-agent/setup-regal@v1
       with:
         version: latest
 
@@ -39,7 +39,7 @@ it might mean that policies that once passed, will need to be updated to pass wi
 ```yml
 steps:
   - name: Setup Regal
-    uses: StyraInc/setup-regal@v1
+    uses: open-policy-agent/setup-regal@v1
     with:
       version: latest
 ```
@@ -50,7 +50,7 @@ environments.
 ```yml
 steps:
   - name: Setup Regal
-    uses: StyraInc/setup-regal@v1
+    uses: open-policy-agent/setup-regal@v1
     with:
       version: x.y.z
 ```
@@ -60,7 +60,7 @@ You can also use a SemVer or [SemVer range](https://www.npmjs.com/package/semver
 ```yml
 steps:
   - name: Setup Regal
-    uses: StyraInc/setup-regal@v1
+    uses: open-policy-agent/setup-regal@v1
     with:
       version: 0.10
 ```
@@ -68,7 +68,7 @@ steps:
 ```yml
 steps:
   - name: Setup Regal
-    uses: StyraInc/setup-regal@v1
+    uses: open-policy-agent/setup-regal@v1
     with:
       version: <0.10
 ```
@@ -83,8 +83,3 @@ The action supports the following inputs:
 ## Credits
 
 This repo is based on the [Setup OPA Action](https://github.com/open-policy-agent/setup-opa).
-
-## Community
-
-For questions, discussions and announcements related to Styra products, services and open source projects, please join
-the Styra community on [Slack](https://communityinviter.com/apps/styracommunity/signup)!

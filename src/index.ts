@@ -38,7 +38,7 @@ function getDownloadObject(version: string): {
   const filename = `regal_${mapOS(platform)}_${mapArch(os.arch())}`;
   const binaryName = platform === 'win32' ? `${filename}.exe` : filename;
 
-  const url = `https://github.com/StyraInc/regal/releases/download/v${version}/${binaryName}`;
+  const url = `https://github.com/open-policy-agent/regal/releases/download/v${version}/${binaryName}`;
 
   core.info(`Release asset url: ${url}`);
   core.info(`Target binary name: ${binaryName}`);
@@ -100,7 +100,7 @@ async function getAllVersions(): Promise<string[]> {
   const allVersions: string[] = [];
   for await (const response of octokit.paginate.iterator(
     octokit.rest.repos.listReleases,
-    { owner: 'StyraInc', repo: 'regal' }
+    { owner: 'open-policy-agent', repo: 'regal' }
   )) {
     for (const release of response.data) {
       if (release.name) {
