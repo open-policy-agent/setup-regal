@@ -11,12 +11,12 @@
     "format": "prettier --write 'src/**/*.{js,ts}'"
   },
   "keywords": [],
-  "homepage": "https://docs.styra.com/regal",
-  "author": "Styra",
+  "homepage": "https://github.com/open-policy-agent/regal",
+  "author": "The Open Policy Agent authors",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/StyraInc/setup-regal.git"
+    "url": "git+https://github.com/open-policy-agent/setup-regal.git"
   },
   "dependencies": {
     "@actions/core": "^1.9.1",

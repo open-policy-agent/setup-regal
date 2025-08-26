@@ -17010,7 +17010,7 @@ function getDownloadObject(version) {
     core.info(`Determining release asset for Regal ${version} on ${platform} ${os.arch()}`);
     const filename = `regal_${mapOS(platform)}_${mapArch(os.arch())}`;
     const binaryName = platform === 'win32' ? `${filename}.exe` : filename;
-    const url = `https://github.com/StyraInc/regal/releases/download/v${version}/${binaryName}`;
+    const url = `https://github.com/open-policy-agent/regal/releases/download/v${version}/${binaryName}`;
     core.info(`Release asset url: ${url}`);
     core.info(`Target binary name: ${binaryName}`);
     return {
@@ -17064,7 +17064,7 @@ function getAllVersions() {
         const octokit = github.getOctokit(githubToken);
         const allVersions = [];
         try {
-            for (var _b = __asyncValues(octokit.paginate.iterator(octokit.rest.repos.listReleases, { owner: 'StyraInc', repo: 'regal' })), _c; _c = yield _b.next(), !_c.done;) {
+            for (var _b = __asyncValues(octokit.paginate.iterator(octokit.rest.repos.listReleases, { owner: 'open-policy-agent', repo: 'regal' })), _c; _c = yield _b.next(), !_c.done;) {
                 const response = _c.value;
                 for (const release of response.data) {
                     if (release.name) {
