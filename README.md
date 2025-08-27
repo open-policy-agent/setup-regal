@@ -1,3 +1,13 @@
+> [!IMPORTANT]
+> Regal is now an official OPA project!
+> ([More Info](https://blog.openpolicyagent.org/note-from-teemu-tim-and-torin-to-the-open-policy-agent-community-2dbbfe494371))
+> For those previously installing Regal from `StyraInc/setup-regal`, please
+> update your scripts and documentation to refer to this Repo. We will be
+> migrating the Regal's documentation to openpolicyagent.org from the next
+> Regal release. Please
+> [file an issue](https://github.com/open-policy-agent/regal/issues/new)
+> for any problems you run into.
+
 # Setup Regal
 
 GitHub action to configure [Regal](https://github.com/open-policy-agent/regal), the Rego linter.
